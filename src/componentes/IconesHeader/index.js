@@ -9,7 +9,7 @@ function IconesHeader() {
     <ul className="icones">
       {icones.map(icone => (
         <li className="icone">
-          <img src={icone}></img>
+          <img src={icone} alt="Icones perfil e sacola"></img>
         </li>
       ))}
     </ul>
