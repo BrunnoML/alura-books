@@ -7,15 +7,17 @@ const PesquisaContainer = styled.section`
   color: #fff;
   text-align: center;
   padding: 85px 0;
-  height: 470px;
+  height: 270px;
   width: 100%;
 `;
-const Titulo = styled.h2`
+
+export const Titulo = styled.h2`
   color: #fff;
   font-size: 36px;
   text-align: center;
   width: 100%;
 `;
+
 const Subtitulo = styled.h3`
   font-size: 16px;
   font-weight: 500;
@@ -56,7 +58,7 @@ function Pesquisa() {
       />
       {livrosPesquisados.map(livro => (
         <Resultado>
-          <img src={livro.src} />
+          <img src={livro.src} alt="imagem do livro" />
           <p>{livro.nome}</p>
         </Resultado>
       ))}
